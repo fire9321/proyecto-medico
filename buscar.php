@@ -3,7 +3,7 @@ include("conexion.php");
 
 $apellido = $_GET['apellido_buscar'];
 
-// Validación: que el campo no esté vacío [cite: 28]
+// Validación: que el campo no esté vacío
 if (empty($apellido)) {
     echo "<script>alert('Por favor ingrese un apellido'); window.location.href='index.php';</script>";
     exit();
