@@ -1,13 +1,15 @@
 <?php
+// Datos de conexión para el servidor de GoogieHost
 $host = "localhost";
-$user = "root"; // Usuario por defecto
-$pass = "";     // Deja vacío si es XAMPP
-$db   = "fichas"; 
+$db   = "wmgevico_medico";
+$user = "wmgevico__UWsffclAEryG2JQ_22g1Tdt3ppDDfXyy"; 
+$pass = "Kalipa93*"; 
 
-$con = mysqli_connect($host, $user, $pass, $db);
+// Intentar conectar con la base de datos
+$conexion = mysqli_connect($host, $user, $pass, $db);
 
-
-if (!$con) {
+// Si algo sale mal, mostrar el error
+if (!$conexion) {
     die("Error de conexión: " . mysqli_connect_error());
 }
 ?>
