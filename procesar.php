@@ -13,8 +13,7 @@ $fecha_nacimiento = $_POST['fecha_nacimiento'];
 $estado_civil = $_POST['estado_civil'];
 $comentarios = $_POST['comentarios'];
 
-// 2. Verificación de existencia (Línea 18 corregida)
-// Usamos solo 'pacientes' porque la conexión ya sabe que estás en la DB 'fichas'
+
 $consulta_existe = "SELECT * FROM pacientes WHERE rut = '$rut'";
 $resultado_existe = mysqli_query($con, $consulta_existe);
 
