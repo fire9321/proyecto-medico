@@ -27,7 +27,7 @@ if (mysqli_num_rows($resultado_existe) > 0) {
         }
     </script>";
 } else {
-    // 3. Inserción (Línea 35 corregida)
+    
     $sql_insertar = "INSERT INTO pacientes (rut, nombres, apellidos, direccion, ciudad, telefono, email, fecha_nacimiento, estado_civil, comentarios) 
                      VALUES ('$rut', '$nombres', '$apellidos', '$direccion', '$ciudad', '$telefono', '$email', '$fecha_nacimiento', '$estado_civil', '$comentarios')";
     
